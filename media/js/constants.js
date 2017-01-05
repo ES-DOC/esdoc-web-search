@@ -58,7 +58,7 @@
 
             // Base viewer url in various modes.
             VIEWER: {
-                dev: "../viewer/index.html",
+                dev: "../esdoc-web-view/index.html",
                 prod: "http://view.es-doc.org",
                 test: "http://test.view.es-doc.org"
             }
