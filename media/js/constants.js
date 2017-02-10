@@ -42,9 +42,10 @@
         URLS: {
             // Base API url in various modes.
             API: {
+                // dev: "https://test-api.es-doc.org",
                 dev: "http://localhost:5000",
                 prod: "http://api.es-doc.org",
-                test: "http://test.api.es-doc.org"
+                test: "https://test-api.es-doc.org"
             },
 
             // ES-DOC homepage.
