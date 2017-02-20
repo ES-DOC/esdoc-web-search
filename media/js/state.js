@@ -38,7 +38,7 @@
             {
                 defaultKey: undefined,
                 key: "subProject",
-                label: "Sub MIP",
+                label: "MIP",
                 labelFormatter: 'upper',
                 requiresMapping: true
             },
