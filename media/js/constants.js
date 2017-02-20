@@ -61,7 +61,7 @@
             VIEWER: {
                 dev: "../esdoc-web-view/index.html",
                 prod: "http://view.es-doc.org",
-                test: "http://test.view.es-doc.org"
+                test: "https://test-view.es-doc.org"
             }
         },
 
