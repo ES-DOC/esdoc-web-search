@@ -44,12 +44,12 @@
             API: {
                 // dev: "https://test-api.es-doc.org",
                 dev: "http://localhost:5000",
-                prod: "http://api.es-doc.org",
+                prod: "https://api.es-doc.org",
                 test: "https://test-api.es-doc.org"
             },
 
             // ES-DOC homepage.
-            HOME_PAGE: "http://es-doc.org",
+            HOME_PAGE: "https://es-doc.org",
 
             // Documentation search.
             SEARCH: "/2/summary/search",
