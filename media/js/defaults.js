@@ -28,7 +28,7 @@
         documentVersion: "latest",
 
         // Default project.
-        project: "cmip6-draft",
+        project: "cmip6",
     };
 
     // Set API base url.
