@@ -6,6 +6,8 @@
     // ECMAScript 5 Strict Mode
     "use strict";
 
+    var pF, spF;
+
     // Declare application state.
     APP.state = {
         // Set of filters.
@@ -134,12 +136,13 @@
     };
 
     // Initialise filter defaults from url parameters.
-    var pF = APP.state.filters.project,
-        spF = APP.state.filters.subProject;
+    pF = APP.state.filters.project;
+    spF = APP.state.filters.subProject;
     if (pF.defaultKey.split(":").length === 2) {
         spF.defaultKey = pF.defaultKey.split(":")[1].toLowerCase();
         pF.defaultKey = pF.defaultKey.split(":")[0].toLowerCase();
     }
+
 
 }(
     this.APP,
