@@ -68,10 +68,10 @@
         // Set of email related constants.
         EMAIL: {
             // Contact email.
-            CONTACT: "es-doc-contact@list.woc.noaa.gov",
+            CONTACT: "support@es-doc.org",
 
             // Support email.
-            SUPPORT: "es-doc-support@list.woc.noaa.gov",
+            SUPPORT: "support@es-doc.org",
 
             // Default email subject.
             SUBJECT: 'ES-DOC SEARCH :: subject goes here',
