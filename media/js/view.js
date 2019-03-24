@@ -113,23 +113,35 @@
 
         // Opens errata detail page.
         _openDetailPage: function (documentID) {
-            var uid, version, p, url;
+            var uid, version, p, dt, url;
 
             // Extract document uid/version.
             uid = documentID.split("_")[0];
             version = documentID.split("_")[1];
 
-            // Set project.
+            // Set project, document type.
             p = APP.state.filters.project.data.current;
+            dt = p.documentType.current;
 
             // Set url.
+            if (p.key === 'cmip6' && dt.cimKey === 'cim.2.science.model') {
+                url = "{0}/cmip6/model/ipsl/ipsl-cm6a-lr";
+                url = url.replace("{0}", APP.defaults.explorerBaseURL);
+            } else {
+                url = "{0}?renderMethod=id&project={1}&id={2}&version={3}&client=esdoc-search";
+                url = url.replace("{0}", APP.defaults.viewerBaseURL);
+                url = url.replace("{1}", p.key);
+                url = url.replace("{2}", uid);
+                url = url.replace("{3}", version);
+            }
+
             url = "{0}?renderMethod=id&project={1}&id={2}&version={3}&client=esdoc-search";
             url = url.replace("{0}", APP.defaults.viewerBaseURL);
             url = url.replace("{1}", p.key);
             url = url.replace("{2}", uid);
             url = url.replace("{3}", version);
 
-            // Open url.
+            // Open in new tab.
             APP.utils.openURL(url, true);
         },
 

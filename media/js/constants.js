@@ -62,6 +62,12 @@
                 dev: "../esdoc-web-view/index.html",
                 prod: "http://view.es-doc.org",
                 test: "https://test-view.es-doc.org"
+            },
+
+            EXPLORER: {
+                dev: "http://localhost:8080",
+                prod: "http://explorer.es-doc.org",
+                test: "https://test-explorer.es-doc.org"
             }
         },
 

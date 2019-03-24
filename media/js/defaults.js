@@ -37,6 +37,8 @@
     // Set viewerBaseURL.
     APP.defaults.viewerBaseURL = APP.constants.URLS.VIEWER[APP.defaults.mode];
 
+    // Set explorerBaseURL.
+    APP.defaults.explorerBaseURL = APP.constants.URLS.EXPLORER[APP.defaults.mode];
 }(
     this.APP,
     window.location.host
