@@ -66,7 +66,7 @@
 
             EXPLORER: {
                 dev: "http://localhost:8080",
-                prod: "http://explore.es-doc.org",
+                prod: "https://explore.es-doc.org",
                 test: "https://test-explore.es-doc.org"
             }
         },
