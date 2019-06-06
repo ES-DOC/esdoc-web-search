@@ -24,7 +24,7 @@ window.$ = window.$jq = jQuery.noConflict();
         LONG_NAME: "Documentation Search",
 
         // Version.
-        VERSION: '0.13.2.0',
+        VERSION: '1.0.0',
 
         // Copyright statement.
         copyrightYear: new Date().getFullYear(),
