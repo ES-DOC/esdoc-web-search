@@ -151,12 +151,19 @@
     APP.utils.getPages = function (data) {
         var pageSize = APP.state.paging.pageSize;
 
-        return _.map(_.range(APP.utils.getPageCount(data.length)), function (id) {
+
+
+        var fff = _.map(_.range(APP.utils.getPageCount(data.length)), function (pageID) {
+            console.log(pageID)
             return {
-                id: id + 1,
-                data: this.slice(id * pageSize, ((id + 1) * pageSize) - 1)
+                id: pageID + 1,
+                data: this.slice(pageID * pageSize, (pageID + 1) * pageSize)
             };
         }, data);
+
+        console.log(fff)
+
+        return fff;
     };
 
     // Displays feedback modal.
