@@ -150,20 +150,12 @@
     // Converts search results into pages for rendering.
     APP.utils.getPages = function (data) {
         var pageSize = APP.state.paging.pageSize;
-
-
-
-        var fff = _.map(_.range(APP.utils.getPageCount(data.length)), function (pageID) {
-            console.log(pageID)
+        return _.map(_.range(APP.utils.getPageCount(data.length)), function (pageID) {
             return {
                 id: pageID + 1,
                 data: this.slice(pageID * pageSize, (pageID + 1) * pageSize)
             };
         }, data);
-
-        console.log(fff)
-
-        return fff;
     };
 
     // Displays feedback modal.
