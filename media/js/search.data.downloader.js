@@ -16,7 +16,6 @@
                 };
 
             // Set optional params.
-            console.log("dtf = " + params.document_type);
             if (p.subProject.current.key !== "*") {
                 params.sub_project = p.subProject.current.shortKey;
             }
